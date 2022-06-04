@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+html{
+    font-size: 62.5%;
+    
+}
+
+.main-div{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    
+
+    place-items: center;
+    background: rgb(93, 164, 218);
+    
+}
+.inner-div{
+    width: 40%;
+    background: #fff;
+    padding: 3rem 8rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0,0,0,0.4);
+}
+
+.inner-div h2{
+    font-size: 3rem;
+    font-weight: 400;
+    margin:1rem 0 4rem 0;
+    display: inline-block;
+}
+
+.inner-div li{
+    font-size: 2rem;
+    margin-top: 1rem;
+    list-style: none;
+}
+input{
+    cursor: pointer;
+}
+#submit {
+    padding: 1rem;
+    outline: none;
+    font-size: 2rem;
+    font-weight: 400;
+    display: block;
+    margin: auto;
+    border: none;
+    text-transform: uppercase;
+    background-color: #74b9ff;
+    margin-top: 5rem;
+    border-radius: 3px;
+    color: rgb(97, 93, 93);
+
+}
+#submit:hover
+{
+    background: #0984e3;
+    color: #fff;
+}
+
+#showScore{
+    background-color: #dfe6e9;
+    margin-top: 3rem;
+    padding: 3rem 4rem;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0,0,0,0.4);
+
+}
+#showScore h3{
+    font-size: 30px;
+    text-align: center;
+}
+#showScore .btn{
+    margin-top: 2rem;
+    background-color: #55efc4;
+    color: #2d3436;
+    padding: 8px 20px;
+    border-radius: 15px
+    ;
+
+}
+#showScore .btn:hover{
+    background-color: #008b94;
+    color: #fff;
+}
+
+.scoreArea{
+    display: none;
+}
+
+/* importing google fonts */
+@media only screen and (max-width: 700px) {
+    body {
+      background-color: lightblue;
+    }
+    #showScore{
+        max-width: 500px;
+    }
+    .main-div{
+        width: 100vw;
+    }
+    .inner-div{
+        width: 100%;
+    }
+  }
